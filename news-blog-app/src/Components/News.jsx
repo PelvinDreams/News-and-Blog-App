@@ -2,6 +2,7 @@ import React from "react";
 import Weather from "./Weather";
 import Calender from "./Calender";
 import "./News.css";
+import userImage from "../assets/images/user.jpg";
 
 const News = () => {
   return (
@@ -22,9 +23,46 @@ const News = () => {
         {/* Nav */}
         <div className="navbar">
           {/* User */}
-          <div className="user">User</div>
+          <div className="user">
+            <img src={userImage} alt="User Image" />
+            <p>Mary's Blog</p>
+          </div>
           {/* Categories */}
-          <div className="categories">Categories</div>
+          <div className="categories">
+            <hi className="nav-heading">Categories</hi>
+            <div className="nav-links">
+              <a href="#" className="nav-link">
+                General
+              </a>
+              <a href="#" className="nav-link">
+                World
+              </a>
+              <a href="#" className="nav-link">
+                Business
+              </a>
+              <a href="#" className="nav-link">
+                Technology
+              </a>
+              <a href="#" className="nav-link">
+                Entertainment
+              </a>
+              <a href="#" className="nav-link">
+                Sports
+              </a>
+              <a href="#" className="nav-link">
+                Science
+              </a>
+              <a href="#" className="nav-link">
+                Health
+              </a>
+              <a href="#" className="nav-link">
+                Nation
+              </a>
+              <a href="#" className="nav-link">
+                Bookmark <i className="fa-regular fa-bookmark"></i>
+              </a>
+            </div>
+          </div>
         </div>
 
         {/* News Section || includes the headlings and also news grid*/}
@@ -36,10 +74,9 @@ const News = () => {
         {/* Blogs Section */}
         <div className="my-blogs">My Blogs</div>
         <div className="weather-calender">
-        <Weather />
-        <Calender />
+          <Weather />
+          <Calender />
         </div>
-       
       </div>
 
       {/* Footer */}
